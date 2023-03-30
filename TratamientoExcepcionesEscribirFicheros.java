@@ -1,5 +1,3 @@
-package excepciones;
-
 import java.io.*;
 
 public class TratamientoExcepcionesEscribirFicheros {
@@ -9,6 +7,7 @@ public class TratamientoExcepcionesEscribirFicheros {
 		PrintWriter pw = null;
 		try {
 			fichero = new FileWriter("/home/maximo/escribir.txt");
+			// notacion para sistemas linux
 			pw = new PrintWriter(fichero);
 
 			for (int i = 0; i < 10; i++)
