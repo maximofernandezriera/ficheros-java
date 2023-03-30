@@ -13,6 +13,7 @@ public class TratamientoExcepcionesFicheros {
 			// Apertura del fichero y creacion de BufferedReader para poder
 			// hacer una lectura comoda (disponer del metodo readLine()).
 			archivo = new File("/home/maximo/ejemplojeson.json");
+			// Notacion de sistema de ficheros linux
 			fr = new FileReader(archivo);
 			br = new BufferedReader(fr);
 
