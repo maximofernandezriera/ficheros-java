@@ -57,7 +57,7 @@ Como opción para leer un fichero de texto línea por línea, podría usarse la 
 
 ## Escritura de un fichero de texto en java
 
-El siguiente código escribe un fichero de texto desde cero. Pone en él 10 líneas
+El siguiente código escribe un fichero de texto desde cero (pone en él 10 líneas). 
 
             import java.io.*;
 
