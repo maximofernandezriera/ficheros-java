@@ -59,36 +59,36 @@ Como opción para leer un fichero de texto línea por línea, podría usarse la 
 
 El siguiente código escribe un fichero de texto desde cero. Pone en él 10 líneas
 
-import java.io.*;
+            import java.io.*;
 
-public class EscribeFichero
-{
-    public static void main(String[] args)
-    {
-        FileWriter fichero = null;
-        PrintWriter pw = null;
-        try
-        {
-            fichero = new FileWriter("c:/prueba.txt");
-            pw = new PrintWriter(fichero);
+            public class EscribeFichero
+            {
+                public static void main(String[] args)
+                {
+                    FileWriter fichero = null;
+                    PrintWriter pw = null;
+                    try
+                    {
+                        fichero = new FileWriter("c:/prueba.txt");
+                        pw = new PrintWriter(fichero);
 
-            for (int i = 0; i < 10; i++)
-                pw.println("Linea " + i);
+                        for (int i = 0; i < 10; i++)
+                            pw.println("Linea " + i);
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-           try {
-           // Nuevamente aprovechamos el finally para 
-           // asegurarnos que se cierra el fichero.
-           if (null != fichero)
-              fichero.close();
-           } catch (Exception e2) {
-              e2.printStackTrace();
-           }
-        }
-    }
-}
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    } finally {
+                       try {
+                       // Nuevamente aprovechamos el finally para 
+                       // asegurarnos que se cierra el fichero.
+                       if (null != fichero)
+                          fichero.close();
+                       } catch (Exception e2) {
+                          e2.printStackTrace();
+                       }
+                    }
+                }
+            }
 Si queremos añadir al final de un fichero ya existente, simplemente debemos poner un flag a true como segundo parámetro del constructor de FileWriter.
 
- FileWriter fichero = new FileWriter("c:/prueba.txt",'''true''');
+             FileWriter fichero = new FileWriter("c:/prueba.txt",'''true''');
