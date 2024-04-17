@@ -1,4 +1,4 @@
-# Ficheros en java
+# Ficheros de texto en java
 
 Podemos abrir un fichero de texto para leer usando la clase FileReader. Esta clase tiene métodos que nos permiten leer caracteres. Sin embargo, suele ser habitual querer las líneas completas, bien porque nos interesa la línea completa, bien para poder analizarla luego y extraer campos de ella. FileReader no contiene métodos que nos permitan leer líneas completas, pero sí BufferedReader. Afortunadamente, podemos construir un BufferedReader a partir del FileReader de la siguiente forma:
 
