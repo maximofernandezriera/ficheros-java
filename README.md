@@ -91,4 +91,4 @@ El siguiente código escribe un fichero de texto desde cero (pone en él 10 lín
             }
 Si queremos añadir al final de un fichero ya existente, simplemente debemos poner un flag a true como segundo parámetro del constructor de FileWriter.
 
-             FileWriter fichero = new FileWriter("c:/prueba.txt",'''true''');
+             FileWriter fichero = new FileWriter("c:/prueba.txt", true);
